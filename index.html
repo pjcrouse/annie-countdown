@@ -9,7 +9,25 @@
 <body>
   <div class="confetti" aria-hidden="true"></div>
 
-  <main class="stage">
+  <div class="gate" id="gate">
+    <form class="gate-card" id="gate-form" autocomplete="off">
+      <p class="gate-kicker">Enter the secret word</p>
+      <input
+        id="gate-input"
+        type="password"
+        inputmode="text"
+        autocomplete="off"
+        autocapitalize="off"
+        autocorrect="off"
+        spellcheck="false"
+        aria-label="Secret word"
+      />
+      <button type="submit" class="gate-btn">Unlock</button>
+      <p class="gate-error hidden" id="gate-error">Not quite — try again</p>
+    </form>
+  </div>
+
+  <main class="stage hidden" id="stage">
     <header class="hero">
       <p class="kicker">Boston Logan · BOS</p>
       <h1 class="title">
@@ -30,7 +48,7 @@
 
     <section class="arrived hidden" id="arrived">
       <h2 class="arrived-title">She's here! 🎉</h2>
-      <img src="annie.gif" alt="Celebration!" class="arrived-gif" />
+      <p class="arrived-sub">Welcome to Boston, Annie</p>
     </section>
   </main>
 
