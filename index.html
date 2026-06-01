@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Annie's Almost Here!</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="confetti" aria-hidden="true"></div>
+
+  <main class="stage">
+    <header class="hero">
+      <p class="kicker">Boston Logan · BOS</p>
+      <h1 class="title">
+        <span class="word">Annie</span>
+        <span class="word">is</span>
+        <span class="word">landing</span>
+        <span class="word sparkle">soon!</span>
+      </h1>
+      <p class="subtitle">Wednesday, June 3 · 1:23 PM</p>
+    </header>
+
+    <section class="countdown" id="countdown" aria-live="polite">
+      <div class="unit"><span class="num" id="days">--</span><span class="lbl">days</span></div>
+      <div class="unit"><span class="num" id="hours">--</span><span class="lbl">hours</span></div>
+      <div class="unit"><span class="num" id="minutes">--</span><span class="lbl">minutes</span></div>
+      <div class="unit"><span class="num" id="seconds">--</span><span class="lbl">seconds</span></div>
+    </section>
+
+    <section class="arrived hidden" id="arrived">
+      <h2 class="arrived-title">She's here! 🎉</h2>
+      <img src="annie.gif" alt="Celebration!" class="arrived-gif" />
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
